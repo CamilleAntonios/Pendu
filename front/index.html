@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Pendu</title>
+        <link rel="stylesheet"  type = "text/css" href="./style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1> Jeu du Pendu </h1>
+            <button id="jouer">JOUER</button>
+        </header>
+
+        <div id="tailleMot">
+            <label for="choix-difficulté" id="label">Choisissez un niveau:</label> 
+            <select name="difficultés" id="difficultés"> 
+                <option value="facile">Facile</option> 
+                <option value="intermediaire">Intermédiaire</option> 
+                <option value="difficile">Difficile</option> 
+            </select>
+        </div>
+
+        <div id="myModal" class="modal">
+
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p id="textModal"></p>
+              <button id="rejouer">REJOUER</button>
+            </div>
+          
+        </div>
+
+        <div id="grille" class="notDisplayed">
+            <aside id="gauche" class="contenu">
+                <div id="brasG" class="notDiscovered"></div>
+                <div id="brasD" class="notDiscovered"></div>
+                <div id="jambeG" class="notDiscovered"></div>
+                <div id="jambeD" class="notDiscovered"></div>
+                <div id="corps" class="notDiscovered"></div>
+                <div id="fil" class="notDiscovered"></div>
+                <div id="tete" class="notDiscovered"></div>
+                <div id="poutre2" class="notDiscovered"></div>
+                <div id="poutre3" class="notDiscovered"></div>
+                <div id="poutre1" class="notDiscovered"></div>
+            </aside> 
+
+            <main class = 'contenu'>
+                <div id="mot" class="mot"></div> <br>
+                <span class="popuptext notDisplayed" id="Popup"></span>
+                <input id = "champ" name="entrée" type="text" maxlength="1" placeholder="Entrez une lettre" class= "champ">
+                <button id="test" class = "champ">TESTER</button>
+            </main>
+
+            <div id="droite" >
+                <aside id ="GrilleDroite" class = 'contenu'>
+                    <div id = "A" class = "lettres">A</div>
+                    <div id = "B" class = "lettres">B</div> 
+                    <div id = "C" class = "lettres">C</div> 
+                    <div id = "D" class = "lettres">D</div> 
+                    <div id = "E" class = "lettres">E</div> 
+                    <div id = "F" class = "lettres">F</div> 
+                    <div id = "G" class = "lettres">G</div> 
+                    <div id = "H" class = "lettres">H</div>  
+                    <div id = "I" class = "lettres">I</div> 
+                    <div id = "J" class = "lettres">J</div> 
+                    <div id = "K" class = "lettres">K</div> 
+                    <div id = "L" class = "lettres">L</div> 
+                    <div id = "M" class = "lettres">M</div> 
+                    <div id = "N" class = "lettres">N</div> 
+                    <div id = "O" class = "lettres">O</div> 
+                    <div id = "P" class = "lettres">P</div> 
+                    <div id = "Q" class = "lettres">Q</div> 
+                    <div id = "R" class = "lettres">R</div> 
+                    <div id = "S" class = "lettres">S</div> 
+                    <div id = "T" class = "lettres">T</div> 
+                    <div id = "U" class = "lettres">U</div> 
+                    <div id = "V" class = "lettres">V</div> 
+                    <div id = "W" class = "lettres">W</div> 
+                    <div id = "X" class = "lettres">X</div> 
+                    <div id = "Y" class = "lettres">Y</div> 
+                    <div id = "Z" class = "lettres">Z</div> 
+                </aside>
+            </div>
+
+        </div>
+
+        <script src="./script.js" defer></script>
+    </body>
+</html>

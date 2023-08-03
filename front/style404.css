@@ -1,0 +1,24 @@
+body{
+    background-color: #119da4;
+}
+
+header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    background: #1f2041;
+    color: #ffc857;
+    font-size: 20px;
+}
+
+#Msg{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    background-color: #1f2041;
+    color: #ffc857;
+    border-radius: 3px;;
+    width: 50vw;
+    left : 25vw;
+    position : relative;
+}
